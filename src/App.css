@@ -1,38 +1,249 @@
-.App {
-  text-align: center;
+.navbar-nav a{
+  font-size: 18px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.proSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+}
+.proImage {
+  width: 80%;
+}
+
+.proTitle h2 {
+  margin: 10px;
+
+}
+.imgBox {
+  width: 80%;
+  padding-left: 20px;
+ 
+}
+.pageSection {
+ 
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  gap: 10px;
+  
+}
+.pageImg {
+  margin-left: 20px;
+  padding-top: 20px;
+  width: 250px;
+  height: 250px;
+}
+ 
+.pageImg img {
+  width: 80%;
+}
+.inde-image{
+  width: 500px;
+  height: 500px;
+}
+.inde-section{
+  display: flex;
+}
+.inde-image img{
+  width:100%;
+  height: 50%;
+}
+.inde-details{
+  padding:20px;
+}
+.fullpage{
+  display: flex;
+}
+.proModel{
+  margin-left: 25px;
+}
+.pro-selected{
+  width: 30%;
+}
+.pageImg {
+  width: 250px;
+  height: 250px;
+  padding-top: 20px;
+}
+
+.pageImg img {
+  width: 80%;
+}
+
+.pageImg img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ind-image {
+  width: 500px;
+  height: 500px;
+}
+
+.ind-section {
+  display: flex;
+}
+
+.ind-image img {
+  width: 10%;
+}
+
+.ind-details {
+  padding: 20px;
+}
+
+.space {
+  margin: 10px;
+}
+.cointainers{
+  background: rgb(238, 232, 232);
+  padding: 20px 30px;
+  margin:0px auto;
+  width: 400px;
+  margin-top: 100px;
+  border-color: 3px solid black;
+}
+.cointainers .header{
+  width: 100%;
+}
+.cointainers .header h2{
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.cointainers .box{
+  width: 100%;
+  margin-top: 10px;
+}
+.cointainers .box input{
+  width: 80%;
+  padding: 10px 20px;
+  margin-left: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.cointainers p{
+  margin-top: 15px;
+  font-size: 12px;
+  color: black;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+
+.fullpage {
+  display: flex;
+}
+
+.pro-selected {
+  width: 30%;
+  border: 1px solid black;
+  margin-right: 20px;
+}
+
+.pro-selected {
+  position: fixed;
+  width: 200px;
+  top: 100;
+  left: 0;
+  height: 100vh;
+  background-color: aliceblue;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.pageSection {
+  margin-left: 220px;
+  
+}
+
+.pro-input input {
+  margin: 5px;
+}
+
+ul li {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-section {
+  display: flex;
+  border: 3px double gray;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cart-img img {
+  width: 50%;
+}
+
+.cart-details {
+  width: 50%;
+}
+
+.cart {
+  color: white;
+}
+
+.cart span {
+  color: orangered;
+}
+
+.cart span {
+  font-size: x-large;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.y-cart {
+  text-align: center;
+}
+
+.empty {
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 575px) {
+  body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-section {
+      width: 100%;
+      max-width: 100vw;
+  }
+ 
+  .user {
+      display: none;
+  }
+  .pageImg img {
+      padding-left: 30px;
+  }
+  .user .cart {
+      display: block;
+      color: white;
+  }
+  .fullpage {
+      width: 100%;
+      max-width: 100vw;
+  }
+  .pro-selected {
+      display: none;
+  }
+  .pageSection {
+      margin-left: 60px;
+      display: block;
+  }
+  .cart-section {
+      width: 60%;
+  }
+  .cart-details {
+      font-size: small;
   }
 }
