@@ -40,14 +40,16 @@ const Kidpage = () => {
         <div className='pageSection'>
           {filteredProduct.map((item) => {
             return (
+              <>
               <Link key={item.id} to={`/kid/${item.id}`}>
                 <div className='pageImg'>
                   <img  className='img1'style={{width:"80%", height:"80%"}}src={item.image} alt="dress" />
                 </div>
-                <div className='proModel'style={{marginTop:"-10%",marginLeft:"25%"}}>
+                <div className='proModel'style={{color:"black"}}>
                   {item.brand} ,{item.model}
                 </div>
               </Link>
+              </>
             )
           })}
         </div>

@@ -89,9 +89,9 @@ const ContactPage = () => {
           </div>
           <div className='col-md-6'>
             <h2>Contact Details</h2>
-            <p><strong>Address:</strong> $-40-146 Kukatpally Hyderabad Telangan</p>
+            <p><strong>Address:</strong> $-40-146 Kukatpally Hyderabad Telangana</p>
             <p><strong>Phone:</strong> (123) 456-7890</p>
-            <p><strong>Email:</strong> info@example.com</p>
+            <p><strong>Email:</strong> srcollections@gmail.com</p>
             <h2 className='mt-5'>Location</h2>
             <iframe
               title='Showroom Location'

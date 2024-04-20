@@ -21,15 +21,17 @@ const Navbar = () => {
                                 <Link to={'/'}className="nav-link active" aria-current="page" href="#">Home</Link>
                             </li>
 
-                            < Link to={'/about'}className="nav-item">
-                                <a className="nav-link" href="#">About</a>
-                            </Link>
+                            <Link to={'/about'} className="nav-link"
+                                       href='#'>About
+                                      </Link>
+
+
 
                             <li className="nav-item">
                             <Link to={'/product'}className="nav-link" href="#">Product</Link>
                             </li>
-                            < Link to={'/contact'}className="nav-item">
-                                <a className="nav-link" href="#">Contact</a>
+                            < Link to={'/contact'}className="nav-link"
+                                 href="#">Contact
                             </Link>
                         </ul>
                         <div className="button">

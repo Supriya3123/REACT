@@ -1,6 +1,11 @@
 .navbar-nav a{
   font-size: 18px;
 }
+.nav-item .nav-link {
+  text-decoration: none;
+}
+
+
 .proSection {
   display: flex;
   background-color: white;
@@ -21,8 +26,8 @@
 .pageSection {
  
   display: grid;
-  grid-template-columns: repeat(4,300px);
-  gap: 10px;
+  grid-template-columns: repeat(3,300px);
+  gap: px;
   
 }
 .pageImg {
@@ -30,7 +35,12 @@
   padding-top: 20px;
   width: 250px;
   height: 250px;
+ 
 }
+.pro-selected label {
+  text-decoration: none;
+}
+
  
 .pageImg img {
   width: 80%;
@@ -54,6 +64,7 @@
 }
 .proModel{
   margin-left: 25px;
+
 }
 .pro-selected{
   width: 30%;
@@ -169,15 +180,17 @@ ul li {
 
 .cart-section {
   display: flex;
-  border: 3px double gray;
-  width: 50%;
-  justify-content: center;
+  border: 3px solid black;
+ width: 50%;
+ text-align: center;
   align-items: center;
-  margin: 50px;
+  margin-left: 25%;
+
 }
 
 .cart-img img {
   width: 50%;
+  height: 50%;
 }
 
 .cart-details {

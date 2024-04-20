@@ -6,9 +6,15 @@ import Navbar from '../components/navbar';
 
 const Kidsingle = () => {
   const { id } = useParams();
-  const { addToCart } = useCart();
+  const { addToCart } = useCart(); // Hook for adding to cart
   const product = kidData.find((item) => item.id === id);
 
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    window.alert('Product added to cart!');
+  };
+
+  // Handle missing product
   if (!product) {
     return (
       <>
@@ -27,30 +33,28 @@ const Kidsingle = () => {
   return (
     <>
       <Navbar />
-      <div className='container mt-5'>
-        <div className='row'>
-          <div className='col-md-6'>
-            <img src={product.image} alt={product.model} className='img-fluid' style={{ width: '300px', height: '200px' }} />
-          </div>
-          <div className='col-md-6'>
-            <div className='product-details'>
-              <div className='inde-model'>
-                <h3>{product.company}</h3>
-                <h3>{product.model}</h3>
+      <center>
+        <div className='container mt-5' style={{ border: "1px solid black" }}>
+          <div className='row'>
+            <div className='col-md-6'>
+              <img src={product.image} alt={product.model} className='img-fluid' style={{ width: '300px', height: '200px' }} />
+            </div>
+            <div className='col-md-6'>
+              <div className='product-details'>
+                <h6 className='mb-3'>Company: {product.company}</h6>
+                <h3 className='mb-3'>Model: {product.model}</h3>
+                <h2 className='mb-4'>Price: {product.price}</h2>
+                <p className='mb-4'>Description: {product.description}</p>
+                <div className="add-to-cart">
+                  <button className='btn btn-outline-dark me-2' onClick={() => handleAddToCart(product)}>
+                    Add to cart
+                  </button>
+                </div>
               </div>
-              <div className='inde-price'>
-                <h2>{product.price}</h2>
-              </div>
-              <div className='inde-descrption'>
-                <p>{product.description}</p>
-              </div>
-              <button className='btn btn-outline-dark me-2' onClick={() => addToCart(product)}>
-                Add to cart
-              </button>
             </div>
           </div>
         </div>
-      </div>
+      </center>
     </>
   );
 };

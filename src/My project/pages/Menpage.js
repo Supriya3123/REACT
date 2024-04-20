@@ -36,16 +36,22 @@ const Menpage = () => {
           ))}
         </div>
         <div className='pageSection'>
-          {filteredProduct.map((item) => (
+          {filteredProduct.map((item) => {
+
+            return(
+              <div>
             <Link key={item.id} to={`/men/${item.id}`} className='product-link'>
               <div className='pageImg'>
                 <img src={item.image} alt={item.brand} />
               </div>
-              <div className='proModel'>
-                {item.brand}
+              </Link>
+              <div className='proModel' style={{fontFamily:"Aharoni"}}>
+                {item.brand} ,{item.model}
               </div>
-            </Link>
-          ))}
+            
+              </div>
+            )
+})}
         </div>
       </div>
     </div>

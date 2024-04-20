@@ -44,7 +44,7 @@ const Womanpage = () => {
                 <div className='pageImg'>
                   <img src={item.image} alt="dress" />
                 </div>
-                <div className='proModel'>
+                <div className='proModel'style={{color:"black"}}>
                   {item.brand}
                 </div>
               </Link>
